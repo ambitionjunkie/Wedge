@@ -1,0 +1,14 @@
+ion-view(view-title="Register", name="register-view")
+    ion-content.padding
+        img.logo(src="img/logo.png", style="width: 80%; height: auto; margin:auto; display:block")
+        div.list.list-inset
+            label.item.item-input
+                input(type="text", placeholder='Name', ng-model="user.username")
+            label.item.item-input
+                input(type="password",placeholder='Password', ng-model="user.password")
+            label.item.item-input
+                input(type="email",placeholder='Email', ng-model="user.email")
+            label.item.item-input
+                input(type="number",placeholder='Phone', ng-model="user.phone")
+
+        button.button.button-block.button-calm(ng-click="register()") Register

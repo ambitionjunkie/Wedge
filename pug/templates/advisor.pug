@@ -1,0 +1,14 @@
+ion-view(view-title="advisor", name="login-view")
+    ion-content.padding
+        div.list.card
+            div.item.item-avatar
+                img(src="{{data.picture}}")
+                h2 {{data.name}}
+                p {{data.phoneNumber}}
+            div.item.item-body
+                label Appointment Time
+                    input(type="time", ng-model="appointmentTime")
+                label Appointment Date
+                    input(type="date", ng-model="appointmentDate")
+
+        button.button.button-positive.button-full(ng-click="makeAppointment()") Schedule

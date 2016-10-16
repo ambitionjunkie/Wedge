@@ -1,0 +1,13 @@
+ion-view(view-title="Login", name="login-view")
+    ion-content.padding
+        img.logo(src="img/logo.png")
+        div.list.list-inset
+            label.item.item-input
+                span.input-label Username
+                input(type="text", placeholder="Select a user name",
+                ng-model="user.username")
+            label.item.item-input
+                span.input-label Password
+                input(type="password", placeholder="Select a password",
+                ng-model="user.password")
+        button.button.button-block.button-calm(ng-click="login()") Login

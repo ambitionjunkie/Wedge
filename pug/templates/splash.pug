@@ -1,0 +1,7 @@
+ion-view(view-title="Login Or Register", name="login-or-register-view")
+    ion-content.padding
+        img.logo(src="img/logo.png", style="width: 80%; height: auto; margin:auto; display:block")
+        div.list.list-inset
+            button.sign-up.button.button-block.button-light.padding-vertical(ng-click="goTo('register')") SIGN UP
+            div.spacer
+            button.login.button.button-block.button-light.padding-vertical(ng-click="goTo('login')") LOG IN

@@ -1,0 +1,33 @@
+ion-view(view-title="skills", name="skills-view")
+    ion-content.padding
+        h3 Select Skills
+        ul.list
+            li.item.item-toggle Auto
+                label.toggle.toggle-assertive
+                    input(type="checkbox", ng-model="data.automotive")
+                    div.track
+                        div.handle
+            li.item.item-toggle Retail
+                label.toggle.toggle-assertive
+                    input(type="checkbox", ng-model="data.retail")
+                    div.track
+                        div.handle
+            li.item.item-toggle Customer Support
+                label.toggle.toggle-assertive
+                    input(type="checkbox", ng-model="data.customer")
+                    div.track
+                        div.handle
+            li.item.item-toggle Landscaping
+                label.toggle.toggle-assertive
+                    input(type="checkbox", ng-model="data.landscaping")
+                    div.track
+                        div.handle
+            li.item.item-toggle Hospitality
+                label.toggle.toggle-assertive
+                    input(type="checkbox", ng-model="data.hospitality")
+                    div.track
+                        div.handle
+
+        button.button-full.button.button-energized(ng-click='submit()') Generate Opportunities
+                i.icon.ion-search.padding-left
+

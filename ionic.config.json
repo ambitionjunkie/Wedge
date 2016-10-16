@@ -1,0 +1,14 @@
+{
+  "name": "WEDGE",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "sass",
+    "watch",
+    "pug"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}

@@ -1,0 +1,56 @@
+ion-view(view-title="Options", name="option-view")
+    ion-content.padding
+        div.card
+            div.item.item-divider {{data.house.savings}}
+
+            div.item.item-icon-left
+                i.icon.ion-home
+                div.row
+                    div.col-40
+                        h3.padding-right Address:
+                    div.col-60
+                        p.padding-right {{data.house.address}}
+                div.row
+                    div.col-40
+                        h3.padding-right Price:
+                    div.col-60
+                        p.pading-right {{data.house.price | currency: $}}
+                div.row
+                    div.col-40
+                        h3.padding-right Type:
+                    div.col-60
+                        p.pading-right {{data.house.housingType}}
+            div.item.item-icon-left(ng-repeat="job in data.jobs")
+                i.icon.ion-nuclear
+                div.row
+                    h2 {{job.title}}
+                div.row
+                    div.col-40
+                        h3.padding-right Company:
+                    div.col-60
+                        p.padding-right {{job.company}}
+                div.row
+                    div.col-40
+                        h3.padding-right Location:
+                    div.col-60
+                        p.padding-right {{job.address}}
+                div.row
+                    div.col-40
+                        h3.padding-right Pay:
+                    div.col-60
+                        p.padding-right {{job.pay | currency: $}}
+
+            div.item.item-divider Transportation
+                div.row
+                    div.col-40
+                        h3.padding-right Location:
+                    div.col-60
+                        p.padding-right {{data.transit.name}}
+                div.row
+                    div.col-40
+                        h3.padding-right Type:
+                    div.col-60
+                        p.padding-right {{data.transit.type}}
+
+
+        button.button.button-full.button-positive(ng-click="submit()") Submit

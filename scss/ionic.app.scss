@@ -1,0 +1,62 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+#parent {
+    background-image: url("../img/pexels-photo-106399.jpg");
+    background-size: cover;
+    width:100%;
+    height: 100%;
+    padding: 50px;
+}
+
+ion-content {
+    background-image: url("../img/pexels-photo-106399.jpg");
+    background-size: cover;
+}
+
+.list-inset {
+    background: transparent;
+}
+
+.logo {
+    width: 80%;
+    height: auto;
+    margin: 25% auto auto;
+    display: block;
+}
+
+.spacer {
+    background: transparent;
+    width: 100%;
+    height: 20px;
+}
+
+.button-full {
+    width: 100%;
+}
+
+#appointment-made {
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2b8000;
+}

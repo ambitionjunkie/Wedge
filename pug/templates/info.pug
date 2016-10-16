@@ -1,0 +1,21 @@
+ion-view(view-title="Login", name="login-view")
+    ion-content.padding
+        div.list.list-inset
+            label.item.item-input
+                span.input-label Name
+                input(type="text", ng-model='data.name')
+            label.item.item-input
+                span.input-label Age
+                input(type="text", ng-model='data.age')
+            label.item.item-input
+                span.input-label Annual Income
+                input(type="number", ng-model='data.income')
+            label.item.item-input
+                span.input-label Household Size
+                input(type="number", ng-model='data.householdSize')
+            label.item.item-input
+                span.input-label Current Rent
+                input(type="number", ng-model='data.rent')
+            ion-checkbox(ng-model="data.employed") Employed?
+            ion-checkbox(ng-model="data.transportation") Have Transportation
+        button.button.button-block(ng-click='submit()') Submit
